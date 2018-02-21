@@ -1,0 +1,1 @@
+function x = tomatornd(N, M)%--- Function File: tomatoernd(N,M)%TOMATOERND Generate a random sample with the hypothetical weight%           distribution of the tomatoes% N = number of rows% M = number of columnsmu = 300;sigma = 100;x = normrnd(mu, sigma, N, M);%x = unifrnd(130, 445, N, M);%x = mu + sigma*trnd(6, N, M);%x = lognrnd(log(mu), sigma, N, M);

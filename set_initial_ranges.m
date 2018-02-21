@@ -1,0 +1,1 @@
+function [lmin0 lmax0] = set_initial_ranges(minboxw, wtomato_max, cali)% Set the ranges for each to grade so all the boxes are conformingNC = length(cali);lmin0 = zeros(NC,1);lmax0 = zeros(NC,1);% Set minimum limitsfor i = 1:NC  lmin0(i) = ceil(minboxw/cali(i));endfor% Set maximum limitslmax0(1) = wtomato_max;for i=2:NC lmax0(i) = lmin0(i-1);endforendfunction
